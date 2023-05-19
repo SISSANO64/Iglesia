@@ -1,0 +1,87 @@
+:root {
+   --color1: #161718;
+   --color2: #eeeeee;
+}
+
+main {
+   margin-top: 50px;
+}
+
+.infoSection {
+   background-color: var(--color1);
+   color: var(--color2);
+   margin: 0;
+   min-height: 50vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+h2 {
+   font-size: 30px;
+   margin: 20px;
+   text-align: center;
+}
+
+.infoSection p {
+   font-size: 20px;
+   margin: 20px;
+}
+
+.serviciosSection {
+   min-height: 50vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.serviciosContainer {
+   width: 90%;
+   max-width: 1200px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: stretch;
+
+}
+
+.servicio {
+   width: 40%;
+   min-width: 240px;
+   background-color: var(--color1);
+   color: var(--color2);
+   display: flex;
+   justify-content: start;
+   flex-direction: column;
+   padding: 10px;
+   text-align: center;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+   margin-top: 15px;
+   margin-bottom: 15px;
+   transition: box-shadow 0.3s;
+   position: relative;
+}
+
+.servicio:hover {
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.servicio img{
+   width: 100%;
+   border-radius: 10px;
+   margin-top: 10px;
+   align-self: flex-start;
+   
+
+}
+
+
+
+@media (max-width: 600px) {
+   .servicio{
+      width: 90%;
+   }
+}

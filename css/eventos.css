@@ -1,0 +1,35 @@
+body{
+   background-color: #161718;
+}
+
+.eventosSection {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.eventosContainer {
+   margin: 0;
+   overflow: hiden;
+}
+
+.imgContainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 95vh;
+   width: 95vw;
+}
+
+.eventosContainer img {
+   height: 90vh;
+   width: 90vw;
+   object-fit: contain;
+   overflow: hidden;
+   border-radius: 10px;
+   z-index: 100;
+}
+
