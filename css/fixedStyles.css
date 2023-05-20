@@ -78,6 +78,16 @@ footer p {
    font-size: 30px;
 }
 
+/* generales--------------------------------------- */
+.subtitle {
+   width: 100%;
+   margin: 50px;
+   margin-right: 10px;
+   margin-left: 10px;
+   text-align: center;
+   font-size: 35px;
+}
+
 .spacer {
    aspect-ratio: 900/100;
    width: 100%;
@@ -111,15 +121,21 @@ footer p {
 }
 
 .hidden {
-   transform: translateX(-100%);
+   opacity: 0;
+   transform: translateX(-10%);
 }
 .show {
-   transition: all 1s .1s;
+   transition: opacity 1.2s 0.1s, transform 1s 0.1s;
+   opacity: 1;
    transform: translateX(0%);
 }
 
 /* ----------------------------------------------------- */
 @media (max-width: 600px) {
+   .subtitle {
+      font-size: 30px;
+   }
+
    header a {
       font-size: 20px;
       margin: 10px;

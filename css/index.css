@@ -9,20 +9,6 @@ main {
 }
 
 /* generales -------------------------------*/
-.subtitle {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 50px;
-   margin: 50px;
-}
-
-h2 {
-   text-align: center;
-   font-size: 40px;
-}
-
 h3 {
    font-size: 30px;
 }
@@ -168,6 +154,22 @@ h3 {
    color: var(--color2);
 }
 
+.misionBlock:nth-child(2) {
+   transition-delay: 100ms;
+}
+.misionBlock:nth-child(3) {
+   transition-delay: 200ms;
+}
+.misionBlock:nth-child(4) {
+   transition-delay: 300ms;
+}
+.misionBlock:nth-child(5) {
+   transition-delay: 400ms;
+}
+.misionBlock:nth-child(6) {
+   transition-delay: 500ms;
+}
+
 /* seccion de creencias -------------------------------*/
 .creencias {
    width: 100%;
@@ -194,11 +196,6 @@ h3 {
    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
    border-radius: 10px;
    margin-bottom: 50px;
-   transition: box-shadow 0.3s;
-}
-
-.creenciasContainer:hover {
-   box-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
 
 .creencias p {
@@ -211,7 +208,7 @@ h3 {
    border-bottom: 2px solid var(--color1);
 }
 
-.creenciasScrollContainer{
+.creenciasScrollContainer {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -225,10 +222,6 @@ h3 {
       align-items: center;
       flex-direction: column;
       text-align: center;
-   }
-
-   h2 {
-      font-size: 30px;
    }
 
    .sobreContainer {
@@ -287,5 +280,21 @@ h3 {
       margin-bottom: 10px;
       font-size: 15px;
       min-width: 200px;
+   }
+
+   .misionBlock:nth-child(2) {
+      transition-delay: 100ms;
+   }
+   .misionBlock:nth-child(3) {
+      transition-delay: 100ms;
+   }
+   .misionBlock:nth-child(4) {
+      transition-delay: 100ms;
+   }
+   .misionBlock:nth-child(5) {
+      transition-delay: 100ms;
+   }
+   .misionBlock:nth-child(6) {
+      transition-delay: 100ms;
    }
 }
