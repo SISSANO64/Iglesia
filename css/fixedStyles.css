@@ -35,7 +35,7 @@ header {
 
 header a {
    text-decoration: none;
-   font-size: 20px;
+   font-size: 22px;
    color: #ffffff;
    margin-left: 15px;
    margin-right: 15px;
@@ -67,10 +67,6 @@ footer {
    margin-right: 30px;
 }
 
-.socialMedia img:hover {
-   transform: translateY(-3px);
-}
-
 .socialMedia img {
    transition: transform 0.3s ease;
    width: 80px;
@@ -99,9 +95,34 @@ footer p {
    background-image: url("../img/wave2.svg");
 }
 
+.hoverEffect {
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+   transition: box-shadow 300ms;
+}
+
+@media (hover: hover) {
+   .hoverEffect:hover {
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+   }
+
+   .socialMedia img:hover {
+      transform: translateY(-3px);
+   }
+}
+
+.hidden {
+   transform: translateX(-100%);
+}
+.show {
+   transition: all 1s .1s;
+   transform: translateX(0%);
+}
+
+/* ----------------------------------------------------- */
 @media (max-width: 600px) {
    header a {
-      font-size: 16px;
+      font-size: 20px;
+      margin: 10px;
    }
 
    footer {
@@ -123,5 +144,12 @@ footer p {
       width: 50%;
       margin: 0;
       margin-bottom: 5px;
+   }
+}
+
+@media (max-width: 400px) {
+   header a {
+      font-size: 16px;
+      margin: 8px;
    }
 }

@@ -57,6 +57,7 @@ h3 {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
+   text-align: center;
 }
 
 .sobreContainer {
@@ -91,12 +92,6 @@ h3 {
    color: var(--color2);
    padding: 15px;
    border-radius: 10px;
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-   transition: box-shadow 0.3s;
-}
-
-.pastores:hover {
-   box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
 .pastores h4 {
@@ -142,9 +137,7 @@ h3 {
    align-content: center;
    border-radius: 10px;
    color: var(--color2);
-   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
    user-select: none;
-   transition: box-shadow 0.3s;
 }
 
 .h3Container,
@@ -160,18 +153,18 @@ h3 {
    align-items: center;
 }
 
-.misionBlock:hover {
-   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-}
 .misionBlock p {
    color: transparent;
+   transition: color 700ms;
+}
+
+.misionBlock h3 {
+   transition: color 700ms;
 }
 .misionBlock:hover h3 {
-   transition: color 400ms ease;
    color: transparent;
 }
 .misionBlock:hover p {
-   transition: color 2000ms;
    color: var(--color2);
 }
 
@@ -218,6 +211,14 @@ h3 {
    border-bottom: 2px solid var(--color1);
 }
 
+.creenciasScrollContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+/* ---------------------------------------------- */
+
 @media (max-width: 600px) {
    .presentation {
       justify-content: center;
@@ -256,7 +257,8 @@ h3 {
    }
 
    .pastores {
-      width: 85%;
+      width: 90%;
+      padding: 0;
    }
 
    .pastores img {
@@ -264,9 +266,12 @@ h3 {
    }
 
    .misionBlock {
-      min-width: 300px;
+      width: 90%;
+      min-width: 200px;
       height: 220px;
       margin: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
    }
 
    .misionBlock p {
@@ -277,8 +282,10 @@ h3 {
    }
 
    .creencias p {
+      width: 98%;
       margin-top: 10px;
       margin-bottom: 10px;
-      width: 90%;
+      font-size: 15px;
+      min-width: 200px;
    }
 }
